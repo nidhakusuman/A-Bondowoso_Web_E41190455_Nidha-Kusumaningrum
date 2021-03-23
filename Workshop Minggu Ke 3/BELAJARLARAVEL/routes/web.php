@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DetailProfilController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('Helo', function () {
+    //me-return string
+    return "Hallooooo";
+});
+
+Route::get('blog', function () {
+    //me-return view
+    return view('blog');
+});
+
+//Route::get('/user', 'ManagementUserController@index');

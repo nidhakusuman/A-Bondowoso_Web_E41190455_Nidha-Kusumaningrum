@@ -6,6 +6,8 @@ use Illuminate\http\Request;
 
 class ManagementUserController extends Controller
 {
-    //disini isi controler Management User
+    public function index() {
+        return "Halo, ini adalah method index dalam controller managementuser";
+ }
 }
 ?>
