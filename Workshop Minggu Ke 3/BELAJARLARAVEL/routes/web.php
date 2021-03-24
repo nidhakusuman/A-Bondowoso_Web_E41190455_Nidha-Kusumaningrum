@@ -28,4 +28,5 @@ Route::get('blog', function () {
     return view('blog');
 });
 
-//Route::get('/user', 'ManagementUserController@index');
+Route::get('user', 'ManagementUserController@index');
+//Route::get('/user'
