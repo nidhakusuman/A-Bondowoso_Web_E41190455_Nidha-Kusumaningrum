@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DetailProfilController extends Controller
+class DetailProfileController extends Controller
 {
     //
 }

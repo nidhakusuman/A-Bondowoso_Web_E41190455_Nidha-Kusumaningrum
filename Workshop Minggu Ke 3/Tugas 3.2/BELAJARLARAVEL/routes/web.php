@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\ManagementUserController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DetailProfilController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,20 +14,9 @@ use App\Http\Controllers\DetailProfilController;
 |
 */
 
-
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('Helo', function () {
-    //me-return string
-    return "Hallooooo";
-});
-
-Route::get('blog', function () {
-    //me-return view
-    return view('blog');
-});
-
-Route::get('user', 'ManagementUserController@index');
-//Route::get('/user'
+//Route::get('user', 'App\Http\Controllers\ManagementUserController@index');
+Route::resource('user', 'App\Http\Controllers\ManagementUserController');
